@@ -72,11 +72,11 @@ function getValidLoanDuration() {
     );
   }
 
-  return Number(loanMonths) + Number(loanYears * NUM_MONTHS_IN_A_YEAR);
+  return Number(loanMonths) + Number(loanYears * MONTHS_IN_YEAR);
 }
 
+// Main loop
 console.log('Welcome to the mortgage calculator!');
-
 while (true) {
   let userLoanAmount = getValidLoanAmount();
   let userAPR = getValidAPR();
