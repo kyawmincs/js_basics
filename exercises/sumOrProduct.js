@@ -28,9 +28,8 @@ function sumOrProduct() {
 
   if (operation === 's') {
     console.log(
-      `The sum of the integers between 1 and ${integerInput} is ${sumUntilNum(
-        integerInput,
-      )}.`,
+      `The sum of the integers between 1 and
+       ${integerInput} is ${sumUntilNum(integerInput)}.`,
     );
   } else if (operation === 'p') {
     console.log(

@@ -40,13 +40,11 @@ function getValidLoanAmount() {
 
 function getValidAPR() {
   let inputAPR = readline.question(
-    'Please enter a positive Annual Interest Rate (%):',
+    'Please enter an  Annual Interest Rate (%) :',
   );
 
   while (invalidNumber(inputAPR) || Number(inputAPR) < 0) {
-    inputAPR = readline.question(
-      'Please enter a positive Annual Interest Rate (%):',
-    );
+    inputAPR = readline.question('Please enter an Annual Interest Rate (%):');
   }
   return inputAPR;
 }
